@@ -64,15 +64,17 @@ Enter `y` to open an interactive heap menu:
 
 ```text
 1. Insert task
-2. Extract highest-priority task
-3. Print heap tree
+2. Show highest-priority task (peek)
+3. Remove highest-priority task
+4. Print heap tree
 0. Exit manual session
 ```
 
 Notes:
 - Task names are entered as a single token (`no spaces`).
 - Priority is an integer; larger value means higher scheduling priority.
-- Option `2` shows step-by-step heapify-down after extraction.
+- Option `2` shows the current max without removing it.
+- Option `3` removes the max and shows step-by-step heapify-down after extraction.
 - After exiting (`0`), the normal Q1/Q2/Q3 demos continue automatically.
 
 ## Question 2: Floyd-Warshall (All-Pairs Shortest Path)
