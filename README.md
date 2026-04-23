@@ -34,6 +34,7 @@ daa_assignment/
 - Step-by-step heapify-down visualization after extraction
 - Demo with random tasks and top-k extraction
 - Benchmark against sorted-array approach
+- Optional interactive manual session for runtime task insertion/extraction
 
 ### Benchmark Setup
 - Input sizes: `n = 1000, 5000, 10000, 50000`
@@ -50,6 +51,29 @@ daa_assignment/
 - Heap build (bottom-up): `O(n)`
 - Insert: `O(log n)`
 - Extract max: `O(log n)`
+
+### Manual Task Insertion Mode (Q1)
+
+When the program starts, it asks:
+
+```text
+Run manual Q1 task insertion session first? (y/n):
+```
+
+Enter `y` to open an interactive heap menu:
+
+```text
+1. Insert task
+2. Extract highest-priority task
+3. Print heap tree
+0. Exit manual session
+```
+
+Notes:
+- Task names are entered as a single token (`no spaces`).
+- Priority is an integer; larger value means higher scheduling priority.
+- Option `2` shows step-by-step heapify-down after extraction.
+- After exiting (`0`), the normal Q1/Q2/Q3 demos continue automatically.
 
 ## Question 2: Floyd-Warshall (All-Pairs Shortest Path)
 
