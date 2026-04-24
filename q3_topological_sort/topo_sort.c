@@ -47,7 +47,9 @@ static int detect_cycle_dfs(Graph *graph,
                 chain[len++] = p;
                 p = parent[p];
             }
-            chain[len++] = nxt;
+            if (len < MAX_SERVICES) {
+                chain[len++] = nxt;
+            }
 
             printf("Cycle detected among services: ");
             while (len > 0) {
